@@ -1,6 +1,6 @@
 [package]
 name = "hyper-tls"
-version = "0.6.0" # don't forget html_root_url in lib.rs
+version = "0.6.0"                                             # don't forget html_root_url in lib.rs
 description = "Default TLS implementation for use with hyper"
 authors = ["Sean McArthur <sean@seanmonstar.com>"]
 license = "MIT/Apache-2.0"
@@ -19,7 +19,7 @@ bytes = "1"
 http-body-util = "0.1.0"
 hyper = "1"
 hyper-util = { version = "0.1.0", features = ["client-legacy", "tokio"] }
-native-tls = "0.2.1"
+native-tls = { git = "https://github.com/Sajjon/rust-native-tls", rev = "50f87c57c5d94f161df1aa6deb0194bb8dcac411" }
 tokio = "1"
 tokio-native-tls = "0.3"
 tower-service = "0.3"
